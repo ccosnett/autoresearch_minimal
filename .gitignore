@@ -23,3 +23,5 @@ dev/
 results.tsv
 
 .idea/
+
+.DS_Store
