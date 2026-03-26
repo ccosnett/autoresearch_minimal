@@ -23,5 +23,6 @@ dev/
 results.tsv
 
 .idea/
+notebooks/
 
 .DS_Store
