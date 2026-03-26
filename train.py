@@ -19,13 +19,23 @@ n_samples, n_features = X_train.shape
 
 t_start = time.time()
 
-# Closed-form OLS: append bias column, solve normal equations
+# Leverage-weighted OLS: downweight high-leverage points
 X_bias = np.column_stack([X_train, np.ones(n_samples)])
-theta = np.linalg.lstsq(X_bias, y_train, rcond=None)[0]
+
+# Compute hat matrix diagonal (leverage)
+H = X_bias @ np.linalg.solve(X_bias.T @ X_bias, X_bias.T)
+h = np.diag(H)
+
+# Weight inversely proportional to leverage
+weights = 1.0 / h
+weights /= weights.sum()  # normalize
+
+W = np.diag(weights)
+theta = np.linalg.solve(X_bias.T @ W @ X_bias, X_bias.T @ W @ y_train)
 w = theta[:n_features]
 b = theta[n_features]
 
-print(f"OLS solved in one step")
+print(f"Leverage-weighted OLS (leverage range: [{h.min():.4f}, {h.max():.4f}])")
 
 # ---------------------------------------------------------------------------
 # Evaluation
