@@ -26,3 +26,17 @@ uv sync
 uv run prepare.py    # generate synthetic data
 uv run train.py      # run baseline
 ```
+
+## Initialize autoresearch with Claude
+
+Start Claude with permissions turned off:
+
+```bash
+claude --dangerously-skip-permissions
+```
+
+Then ask it:
+
+```
+Hi have a look at program.md and let's kick off a new experiment! let's do the setup first.
+```
