@@ -2,7 +2,7 @@
 Linear regression training script.
 The agent modifies this file to improve val_mse.
 
-Usage: python train.py
+Usage: uv run train.py
 """
 
 import time
