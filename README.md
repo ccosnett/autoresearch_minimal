@@ -29,7 +29,7 @@ uv run train.py      # run baseline
 
 ## Initialize autoresearch with Claude Code
 
-Start Claude Code on the commandline with permissions turned off:
+Start Claude Code on the command-line with permissions turned off:
 
 ```bash
 claude --dangerously-skip-permissions
