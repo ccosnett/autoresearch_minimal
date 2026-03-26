@@ -31,7 +31,7 @@ w = theta_global[:n_features]
 b = theta_global[n_features]
 
 # Local predictions for val set
-BANDWIDTH = 2.0  # kernel bandwidth
+BANDWIDTH = 1.5  # kernel bandwidth
 local_preds = np.zeros(X_val.shape[0])
 
 for i in range(X_val.shape[0]):
