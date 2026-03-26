@@ -27,9 +27,9 @@ uv run prepare.py    # generate synthetic data
 uv run train.py      # run baseline
 ```
 
-## Initialize autoresearch with Claude
+## Initialize autoresearch with Claude Code
 
-Start Claude with permissions turned off:
+Start Claude Code with permissions turned off:
 
 ```bash
 claude --dangerously-skip-permissions
