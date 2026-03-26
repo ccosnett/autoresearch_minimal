@@ -26,7 +26,3 @@ uv sync
 uv run prepare.py    # generate synthetic data
 uv run train.py      # run baseline
 ```
-
-## License
-
-MIT
