@@ -12,9 +12,9 @@ A fork of [Karpathy's autoresearch](https://github.com/karpathy/autoresearch) th
 
 ```
 ┌─────────────┐     ┌─────────────┐     ┌─────────────┐
-│  AI agent   │────>│ modify      │────>│ evaluate     │
-│  reads      │     │ train.py    │     │ val_mse      │
-│  program.md │<────│             │<────│              │
+│  AI agent   │────>│ modify      │────>│ evaluate    │
+│  reads      │     │ train.py    │     │ val_mse     │
+│  program.md │<────│             │<────│             │
 └─────────────┘     └─────────────┘     └─────────────┘
 ```
 
