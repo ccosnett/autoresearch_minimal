@@ -11,7 +11,7 @@ A fork of [Karpathy's autoresearch](https://github.com/karpathy/autoresearch) th
 | **Dependencies** | PyTorch + GPU | NumPy |
 
 <br>
-<p align="left">
+<p align="center">
   <img src="autoresearch_diagram.svg" width="500" alt="autoresearch diagram">
 </p>
 
