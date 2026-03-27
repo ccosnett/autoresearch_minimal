@@ -10,13 +10,7 @@ A fork of [Karpathy's autoresearch](https://github.com/karpathy/autoresearch) th
 | **Metric** | `val_bpb` | `val_mse` |
 | **Dependencies** | PyTorch + GPU | NumPy |
 
-```
-┌─────────────┐     ┌─────────────┐     ┌─────────────┐
-│  AI agent   │────>│ modify      │────>│ evaluate    │
-│  reads      │     │ train.py    │     │ val_mse     │
-│  program.md │<────│             │<────│             │
-└─────────────┘     └─────────────┘     └─────────────┘
-```
+![autoresearch diagram](autoresearch_diagram.svg)
 
 ## Quick start
 
